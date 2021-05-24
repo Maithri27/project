@@ -1,0 +1,17 @@
+<div>
+    <form #addStudentRef="ngForm" (ngSubmit)="storeStudent(addStudentRef.value)">
+        <label>Student Id: </label>
+        <input type="number" name="sid" ngModel><br/>
+        <label>Student Name: </label>
+        <input type="text" name="sname" ngModel><br/>
+        <label>Email: </label>
+        <input type="email" name="email" ngModel><br/>
+        <label>Contact Number: </label>
+        <input type="number" name="contact" ngModel><br/>
+        <input type="submit" value="store" />
+        <input type="reset" value="reset" />
+    </form>
+    <div>
+        {{Msg}}
+    </div>
+</div>

@@ -1,0 +1,11 @@
+<div>
+    <form #getStudentRef="ngForm" (ngSubmit)="findStudent(getStudentRef.value)">
+        <label>Student Id: </label>
+        <input type="number" name="sid" ngModel><br/>
+        <input type="submit" value="Find" />
+        <input type="reset" value="reset" />
+    </form>
+    <div>
+        {{Msg}}
+    </div>
+</div>
